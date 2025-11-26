@@ -30,14 +30,12 @@ class Cliente extends Model
         'fecha_registro'   => 'datetime',
     ];
 
-    // Un cliente tiene muchas matrículas
     public function matriculas()
     {
         return $this->hasMany(Matricula::class, 'cliente_id');
     }
 
-    // Helper simple para nombre completo
-    public function getNombreCompletoAttribute(): string
+    public function getNombreCompletoAttribute()
     {
         return "{$this->nombres} {$this->apellido_paterno} {$this->apellido_materno}";
     }

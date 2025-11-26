@@ -37,7 +37,10 @@
                                         <div class="col-sm-auto">
                                             <div class="d-flex flex-wrap align-items-start gap-2">
                                                 <button class="btn btn-soft-danger" id="remove-actions" onClick="deleteMultiple()"><i class="ri-delete-bin-2-line"></i></button>
-                                                <button type="button" class="btn btn-success add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Add Customer</button>
+                                                <a href="{{ route('clientes.create') }}" class="btn btn-success">
+                                                    <i class="ri-add-line align-bottom me-1"></i> Nuevo cliente
+                                                </a>
+
                                                 <button type="button" class="btn btn-info"><i class="ri-file-download-line align-bottom me-1"></i> Import</button>
                                             </div>
                                         </div>

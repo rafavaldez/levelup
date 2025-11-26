@@ -22,6 +22,11 @@
     <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
 
+    <link href="{{ asset('assets/libs/dropzone/dropzone.css') }}" rel="stylesheet" type="text/css" />
+
+    
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     @stack('styles')
 </head>
 
@@ -65,6 +70,21 @@
     <script src="{{ asset('assets/libs/jsvectormap/maps/world-merc.js') }}"></script>
     <script src="{{ asset('assets/js/pages/dashboard-analytics.init.js') }}"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
+
+    <script src="{{ asset('assets/libs/list.js/list.min.js') }}"></script>
+    <script src="{{ asset('assets/libs/list.pagination.js/list.pagination.min.js') }}"></script>
+    <script src="{{ asset('assets/js/pages/ecommerce-customer-list.init.js') }}"></script>
+    <script src="{{ asset('assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+
+
+    <!-- ckeditor -->
+    <script src="{{ asset('assets/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
+
+    <!-- dropzone js -->
+    <script src="{{ asset('assets/libs/dropzone/dropzone-min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/pages/ecommerce-product-create.init.js') }}"></script>
+
 
     @stack('scripts')
 </body>
